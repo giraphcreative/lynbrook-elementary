@@ -1,0 +1,401 @@
+
+
+.main-menu {
+	@include clearfix;
+	background: $green;
+	text-align: center;
+
+	ul {
+		
+		li {
+			
+			@include respond-to( 480px ) {
+				display: inline;
+			}
+
+			a {
+				display: block;
+				color: white;
+				text-decoration: none;
+				padding: 6px;
+				text-transform: uppercase;
+				@include font-bold;
+
+				@include respond-to( 768px ) {
+					float: left;
+					width: 16.6%;
+					padding: 14px 0;
+				}
+
+				@include respond-to( 1024px ) {
+					font-size: 1.2em;
+				}
+
+				&:hover {
+					background: lighten( $green, 5% );
+				}
+			}
+		}
+	}
+}
+
+.header-home {
+	text-align: center;
+	background: url(../img/bg-header-home.jpg) center center no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	
+	@include respond-to( 768px ) {
+		position: relative;
+		min-height: 500px;
+	}
+
+	@include respond-to( 1024px ) {
+		min-height: 600px;
+	}
+
+	.logo {
+		padding: 15px 0;
+		background: rgba( lighten( $green, 10% ), .7 );
+
+		@include respond-to( 768px ) {
+			padding: 40px 0;
+		}
+		
+		.clover {
+			max-width: 50%;
+
+			@include respond-to( 768px ) {
+				position: absolute;
+				left: 15%;
+				top: 50%;
+				width: 160px;
+				margin: -80px 0 0 -80px;
+			}
+		}
+
+		h1, h3 {
+			text-transform: uppercase;
+			padding: 5px 15px;
+
+			@include respond-to( 768px ) {
+				padding: 5px 15% 5px 28%;
+				text-shadow: 1px 1px 10px rgba( darken( $green, 15% ), .8 );
+			}
+
+			@include respond-to( 1024px ) {
+				padding-left: 20%;
+			}
+		}
+
+		h1 {
+			font-size: 1.6em;
+
+			@include respond-to( 768px ) {
+				font-size: 2em;
+			}
+		}
+
+		h3 {
+			background: $green;
+			margin-bottom: 10px;
+			font-size: 1.2em;
+
+			@include respond-to( 768px ) {
+				font-size: 1.3em;
+			}
+		}
+
+		@include respond-to( 768px ) {
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	.title-one-school {
+		margin: 10px 0;
+
+		@include respond-to( 768px ) {
+			position: absolute;
+			bottom: 220px;
+			right: 5%;
+		}
+	}
+}
+
+.about {
+	.mast {
+		padding: 20px;
+		text-align: center;
+		background: url(../img/bg-plaid.png) center center no-repeat;
+		background-size: cover;
+
+		a.contact {
+			display: block;
+			padding: 15px;
+			background: white;
+			color: $green;
+			border-radius: 10px;
+			box-shadow: 3px 3px 15px rgba( $green, .7 );
+			text-transform: uppercase;
+			text-decoration: none;
+			@include font-bold;
+		}
+		
+		@include respond-to( 768px ) {
+			padding: 70px 0;
+			position: relative;
+	
+			.circle {
+				position: absolute;
+				left: 20%;
+				top: 50%;
+				margin: -100px 0 0 -125px;
+			}
+
+			.description {
+				background: rgba( white, .7 );
+				color: black;
+				padding: 20px 5% 20px 35%;
+				text-align: left;
+			}
+
+			img.heart {
+				position: absolute;
+				bottom: 5px;
+				right: 230px;
+			}
+
+			a.contact {
+				position: absolute;
+				right: 20px;
+				bottom: 20px;
+				width: 180px;
+			}
+		}
+	}
+
+	.content {
+		padding: 20px;
+
+		@include respond-to( 768px) { padding: 40px; }
+
+		img.right {
+			display: block;
+			margin: 10px auto;
+
+			@include respond-to( 768px ) {
+				float: right;
+				margin: 0 0 15px 15px;
+			}
+		}
+
+		ul {
+			list-style-type: circle;
+			padding: 5px 10px 5px 25px;
+
+			li {
+				padding: 4px 0;
+			}
+		}
+	}
+}
+
+
+.projects {
+	background: $green-light;
+	padding: 20px;
+	@include clearfix;
+	
+	.mast {
+		text-align: center;
+		padding-bottom: 20px;
+		
+		@include respond-to( 768px ) {
+			.circle {
+				position: absolute;
+				left: 12%;
+				top: 120px;
+				margin: -100px 0 0 -125px;
+			}
+
+			.description {
+				background: white;
+				color: black;
+				padding: 20px 60px 20px 25%;
+				text-align: left;
+			}
+		}
+
+		@include respond-to( 1024px ) {
+			.description {
+				padding-right: 450px;
+			}
+		}
+	}
+
+
+	@include respond-to( 768px ) {
+		padding: 60px 0 0;
+		position: relative;
+
+		.photo-1 {
+			display: none;
+		}
+
+		.photo-2 {
+			float: right;
+		}
+
+		.content {
+			padding: 30px 40px;
+		}
+	}
+
+	@include respond-to( 1024px ) {
+		.photo-1 {
+			display: block;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+	}
+}
+
+
+.volunteers {
+	background: url(../img/bg-volunteer-photo.jpg) center center no-repeat;
+	background-size: cover;
+
+	.content {
+		background: rgba( $green, .7 );
+		padding: 20px;
+	
+		@include respond-to( 768px ) {
+			padding: 20px 20px 200px 20px;
+			max-width: 45%;
+			margin-left: 30px;
+			border: 4px solid rgba( lighten( $green-light, 20% ), .6 );
+			border-top: 0;
+			border-bottom: 0;
+		}
+
+		img.circle {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+.news {
+	padding: 20px;
+
+	.mast {
+		text-align: center;
+		padding-bottom: 25px;
+		font-size: 1.3em;
+
+		img.circle {
+			margin-bottom: 10px;
+		}
+
+		@include respond-to( 768px ) {
+			color: black;
+			position: relative;
+			padding: 60px 0 60px 30%;
+			font-size: 1.8em;
+			background: rgba( white, .2 );
+			text-align: left;
+
+			img.circle {
+				position: absolute;
+				left: 15%;
+				top: 50%;
+				margin: -100px 0 0 -125px;
+			}
+		}
+	}
+
+	
+	@include respond-to( 768px ) { 
+		padding: 60px 0;
+
+		.content {
+			padding: 40px;
+
+			ul {
+				list-style-type: circle;
+				padding: 5px 10px 5px 25px;
+
+				li {
+					padding: 4px 0;
+				}
+			}
+		}
+	}
+}
+
+
+.join {
+	text-align: center;
+	background: url(../img/bg-plaid.png) center center no-repeat;
+	background-size: cover;
+	@include clearfix;
+
+	@include respond-to( 768px ) {
+		padding: 140px 30px 0 30px;
+	}
+
+	.column {
+		padding: 20px 0;
+		
+		.box {
+			background: rgba( white, .3 );
+			margin-top: 120px;
+			padding: 20px;
+
+			img.circle {
+				margin-top: -120px;
+			}
+		}
+
+		@include respond-to( 768px ) {
+			float: left;
+			width: 50%;
+
+			.box {
+				margin: 20px;
+			}
+		}
+
+		@include respond-to( 1024px ) {
+			.box {
+				margin: 20px 80px;
+			}
+		}
+	}
+}
+
+
+.footer {
+	background: white;
+	text-align: center;
+	color: black;
+	padding: 20px;
+	@include clearfix;
+	
+	h4 {
+		font-size: 1.6em;
+		line-height: 1.6em;
+	}
+
+	@include respond-to( 768px ) {
+		.fairfax {
+			float: right;
+		}
+	}
+}
+

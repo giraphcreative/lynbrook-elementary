@@ -1,0 +1,27 @@
+
+
+// set colors
+$grey: #5f626f;
+$red: #b30838;
+$black: #25252a;
+$green: #205b2e;
+$green-light: #6D9C6D;
+
+$link-color: $red;
+
+
+// some layout settings
+$layout-max-width: 1220px;
+
+
+// mixin library
+@import "mixins";
+
+// font import and mixins
+@import "fonts";
+
+// base styles
+@import "base";
+
+// layout styles
+@import "layout";
