@@ -75,12 +75,12 @@ body {
 }
 
 a {
-	color: #b30838;
+	color: white;
 	-webkit-transition: opacity 400ms ease-in-out;
 	transition: opacity 400ms ease-in-out;
 
 	&:hover, &:focus {
-		color: #e40a47;
+		color: #eeeeee;
 	}
 
 	&.meta {
