@@ -8,6 +8,7 @@ get_header();
 
 $about = get_page_by_path( 'about' );
 $projects = get_page_by_path( 'projects' );
+$volunteer = get_page_by_path( 'volunteer' );
 
 ?>
 
@@ -43,9 +44,7 @@ $projects = get_page_by_path( 'projects' );
 		<div class="volunteers">
 			<div class="content">
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-volunteers.png" alt="" class="circle">
-				<p>The Lynbrook community relies on volunteers and partners from the community.</p> 
-				<p><strong>Interested in volunteering?</strong><br>
-					Click here to get information of current volunteering opportunities.</p>
+				<?php print $volunteer->post_excerpt ?>
 			</div>
 		</div>
 
