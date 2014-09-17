@@ -30,7 +30,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav>
 
-		<div class="header<?php print ( is_home() || is_front_page() ? "-home" : "" ); ?>">
+		<div class="header<?php print ( is_front_page() ? "-home" : "" ); ?>">
 			<div class="logo">
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/clover.png" class="clover" alt="">
 				<h1>Lynbrook Elementary School PTA</h1>
