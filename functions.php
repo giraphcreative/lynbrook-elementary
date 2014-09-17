@@ -35,4 +35,11 @@ add_action( 'wp_enqueue_scripts', 'p_scripts' );
 
 
 
+// init!
+add_action('init', 'p_init');
+function p_init() {
+	add_post_type_support( 'page', 'excerpt' );
+}
+
+
 ?>

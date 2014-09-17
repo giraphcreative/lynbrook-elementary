@@ -6,9 +6,7 @@
 get_header();
 
 ?>
-	<div id="primary" class="site-content">
-
-		<div id="content" class="site-content content-narrow" role="main">
+	<div id="primary" class="site-content content-narrow" role="main">
 		<?php 
 		if ( have_posts() ) :
 			while ( have_posts() ) : the_post(); 
@@ -19,8 +17,6 @@ get_header();
 			endwhile;
 		endif;
 		 ?>
-		</div><!-- #content -->
-
 	</div><!-- #primary -->
 <?php
 

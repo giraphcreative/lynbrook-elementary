@@ -37,6 +37,18 @@
 			}
 		}
 	}
+
+	.home & {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+	}
+}
+
+.home #wpadminbar {
+	display: none;
 }
 
 .header-home {
@@ -124,6 +136,82 @@
 		}
 	}
 }
+
+.header {
+	text-align: center;
+	padding-top: 20px;
+	height: 220px;
+
+	@include respond-to( 768px ) {
+		position: relative;
+	}
+
+	.logo {
+		padding: 15px 0;
+		background: rgba( lighten( $green, 10% ), .7 );
+
+		@include respond-to( 768px ) {
+			padding: 40px 0;
+		}
+		
+		.clover {
+			max-width: 50%;
+
+			@include respond-to( 768px ) {
+				position: absolute;
+				left: 15%;
+				top: 50%;
+				width: 160px;
+				margin: -80px 0 0 -80px;
+			}
+		}
+
+		h1, h3 {
+			text-transform: uppercase;
+			padding: 5px 15px;
+
+			@include respond-to( 768px ) {
+				padding: 5px 15% 5px 28%;
+				text-shadow: 1px 1px 10px rgba( darken( $green, 15% ), .8 );
+			}
+
+			@include respond-to( 1024px ) {
+				padding-left: 20%;
+			}
+		}
+
+		h1 {
+			font-size: 1.6em;
+
+			@include respond-to( 768px ) {
+				font-size: 2em;
+			}
+		}
+
+		h3 {
+			background: $green;
+			margin-bottom: 10px;
+			font-size: 1.2em;
+
+			@include respond-to( 768px ) {
+				font-size: 1.3em;
+			}
+		}
+
+		@include respond-to( 768px ) {
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	.title-one-school {
+		display: none;
+	}
+}
+
+
 
 .about {
 	.mast {
@@ -332,6 +420,15 @@
 
 				li {
 					padding: 4px 0;
+
+					a {
+						color: white;
+						text-decoration: none;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
 				}
 			}
 		}
@@ -377,6 +474,14 @@
 			}
 		}
 	}
+}
+
+
+
+.content-narrow {
+	max-width: 750px;
+	padding: 20px;
+	margin: 0 auto 100px;
 }
 
 
