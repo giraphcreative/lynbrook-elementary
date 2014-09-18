@@ -38,12 +38,14 @@
 		}
 	}
 
-	.home & {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 1000;
+	@include respond-to( 768px ) {
+			.home & {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+		}
 	}
 }
 
