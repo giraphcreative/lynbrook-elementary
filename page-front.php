@@ -11,7 +11,8 @@ $projects = get_page_by_path( 'projects' );
 $volunteer = get_page_by_path( 'volunteer' );
 
 ?>
-
+	
+		<a name="about"></a>
 		<div class="about">
 			<div class="mast">
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-about.png" alt="" class="circle">
@@ -26,7 +27,8 @@ $volunteer = get_page_by_path( 'volunteer' );
 				<?php print $about->post_content ?>
 			</div>
 		</div>
-
+	
+		<a name="projects"></a>
 		<div class="projects">
 			<div class="mast">
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-projects.png" alt="" class="circle">
@@ -40,14 +42,16 @@ $volunteer = get_page_by_path( 'volunteer' );
 				<?php print $projects->post_content ?>
 			</div>
 		</div>
-
+		
+		<a name="volunteers"></a>
 		<div class="volunteers">
 			<div class="content">
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-volunteers.png" alt="" class="circle">
 				<?php print $volunteer->post_excerpt ?>
 			</div>
 		</div>
-
+		
+		<a name="news"></a>
 		<div class="news">
 			<div class="mast">
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-news.png" alt="" class="circle">
@@ -70,7 +74,8 @@ $volunteer = get_page_by_path( 'volunteer' );
 				</ul>
 			</div>
 		</div>
-
+	
+		<a name="join"></a>
 		<div class="join">
 			<div class="column">
 				<div class="box">
