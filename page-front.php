@@ -46,7 +46,7 @@ $volunteer = get_page_by_path( 'volunteer' );
 		<a name="volunteers"></a>
 		<div class="volunteers">
 			<div class="content">
-				<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-volunteers.png" alt="" class="circle">
+				<a href="/volunteer"><img src="<?php bloginfo( 'template_url' ); ?>/img/circle-volunteers.png" alt="" class="circle"></a>
 				<?php print $volunteer->post_excerpt ?>
 			</div>
 		</div>
@@ -54,7 +54,7 @@ $volunteer = get_page_by_path( 'volunteer' );
 		<a name="news"></a>
 		<div class="news">
 			<div class="mast">
-				<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-news.png" alt="" class="circle">
+				<a href="/news"><img src="<?php bloginfo( 'template_url' ); ?>/img/circle-news.png" alt="" class="circle"></a>
 				<div class="description">Read more about the Lynbrook community!</div>
 			</div>
 			<div class="content">
@@ -79,13 +79,13 @@ $volunteer = get_page_by_path( 'volunteer' );
 		<div class="join">
 			<div class="column">
 				<div class="box">
-					<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-join.png" alt="" class="circle">
+					<a href="/join"><img src="<?php bloginfo( 'template_url' ); ?>/img/circle-join.png" alt="" class="circle"></a>
 					<p>Support our community by becoming a member of the Lynbrook PTA!</p>
 				</div>
 			</div>
 			<div class="column">
 				<div class="box">
-					<img src="<?php bloginfo( 'template_url' ); ?>/img/circle-donate.png" alt="" class="circle">
+					<a href="https://www.sagepayments.net/eftcart/forms/donate.asp?M_id=169717435723"><img src="<?php bloginfo( 'template_url' ); ?>/img/circle-donate.png" alt="" class="circle"></a>
 					<p>Make a tax-deductible donation to our various projects.</p>
 				</div>
 			</div>
