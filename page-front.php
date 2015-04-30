@@ -77,16 +77,10 @@ $volunteer = get_page_by_path( 'volunteer' );
 	
 		<a name="join"></a>
 		<div class="join">
-			<div class="column">
+			<div class="column" style="float: none; margin: 0 auto;">
 				<div class="box">
 					<a href="/join"><img src="<?php bloginfo( 'template_url' ); ?>/img/circle-join.png" alt="" class="circle"></a>
 					<p>Support our community by becoming a member of the Lynbrook PTA!</p>
-				</div>
-			</div>
-			<div class="column">
-				<div class="box">
-					<a href="https://www.sagepayments.net/eftcart/forms/donate.asp?M_id=169717435723"><img src="<?php bloginfo( 'template_url' ); ?>/img/circle-donate.png" alt="" class="circle"></a>
-					<p>Make a tax-deductible donation to our various projects.</p>
 				</div>
 			</div>
 		</div>
